@@ -7,18 +7,17 @@ import { addTooCart } from '../features/CartSlice';
 import './FilteredData.css'
 
 const FilteredData = () => {
-  const [showAllData, setShowAllData] = useState([])
+  const [showAllData, setShowAllData] = useState(null)
   const location = useLocation();
   const dispatch = useDispatch();
-
+  
   useEffect(() => {
-    console.log(Items.filter((value) => value.type === location.state),"filterd");
-
-  }, [])
+    setShowAllData(Items.filter((value) => value.type === location.state));
+  },[useLocation]);
 
   return (
     <div className='mapping'>
-      {showAllData != [] ?
+      {showAllData != null ?
         showAllData.map((value,id) => {
           return (
             <div className="item-card" key={id}>

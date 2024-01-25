@@ -19,7 +19,7 @@ function App() {
  
   return (
    <BrowserRouter>
-   <Navbar setSearchdatas2={setSearchdatas} setClicksearch2={setClicksearch}/>
+   <Navbar setSearchdatas2={setSearchdatas} setClicksearch2={setClicksearch} cartcount={cartcount}/>
    <Routes>
    <Route path="/" element={<Protected Component={Home} searchdatasvar={searchdatas} clicksearch={clicksearch}/>} />
    <Route path="/addtocart" element={<Protected Component={AddToCart} setCartCount={setCartcount}/>} />
