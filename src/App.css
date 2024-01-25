@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+.item-card-row{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.item-card{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 300px;
+  width: 250px;
+  background-color: rgb(254, 254, 255);
+}
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.boxfirsts{
+  height: 200px;
+  width: 100vw;
+  border-top: 2px solid rgb(221, 215, 215);
+}
+.boxfirsts img{
+  height: 100%;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+.mapping-heading{
+  width: 800vw;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.maping{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 60px;
+  justify-content: space-evenly;
+}
+.item-card img{
+  margin: 0px;
+  height: 200px;
+  width: 200px;
+  border: none;
+  border-radius: 50%;
+  background-color:white;
+}
+.btn:hover{
+  background-color: rgb(177, 226, 43);
+}
+
+@media only screen and (max-width: 600px){
+  .item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 300px;
+    width: 350px;
+    background-color: rgb(254, 254, 255);
+  }
+}
+
+.hooks{
+  height: 400px;
+  width: 200px;
+  background-color: brown;
+  margin-top: 50px;
+}

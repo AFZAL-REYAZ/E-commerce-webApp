@@ -1,0 +1,24 @@
+
+.homeHoleBox{
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner{
+    height: 360px;
+}
+.carousel-inner img{
+    height: 360px;
+}
+.footer_main_box{
+    display: flex;
+    background-color: rgb(100, 98, 98);
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .carousel-inner{
+        height: 200px;
+    }
+}

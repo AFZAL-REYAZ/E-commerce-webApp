@@ -1,0 +1,30 @@
+
+.item-card{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 300px;
+    width: 250px;
+    background-color: rgb(254, 254, 255);
+    border: 1px solid black;
+}
+
+.item-card-row{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.mapping{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    background-color: rgb(223, 228, 228);
+}
+
+    

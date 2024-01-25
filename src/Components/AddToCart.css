@@ -1,0 +1,101 @@
+.addtocart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 57px;
+    background-color: rgb(223, 228, 228);
+    height: 100%;
+}
+
+.addtocart img{
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+}
+.tablecart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-radius: 5px;
+    height: 300px;
+    width: 250px;
+    background-color: rgb(254, 254, 255);
+}
+.tablecart img:hover{
+    height: 160px;
+    width: 160px;
+}
+.tablecart:hover{
+    background-color: rgb(238, 252, 248);
+}
+.addToCartActiveBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+}
+.incDecBtn{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 70px;
+    justify-content: space-between;
+}
+.decriment,.increment{
+    border: none;
+    border-radius: 5px;
+}
+.deleteCartItem{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.deleteCartItem:hover{
+    background-color: brown;
+}
+.counteritem{
+    border: 1px solid black;
+}
+.totalCountBox{
+    display: flex;
+    justify-content: space-around;
+}
+.CartEmpty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+    border: none;
+}
+@media screen and (max-width:995px){
+    .tablecart{
+        margin-top: 50px;
+        height: 310px;
+        width: 270px;
+    }
+}
+@media screen and (max-width:660px){
+    .tablecart{
+        margin-top: 50px;
+        height: 340px;
+        width: 370px;
+    }
+    .decriment,.increment{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+    }
+}
