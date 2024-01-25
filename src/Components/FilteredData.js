@@ -13,7 +13,7 @@ const FilteredData = () => {
   
   useEffect(() => {
     setShowAllData(Items.filter((value) => value.type === location.state));
-  }, [null]);
+  }, [undefined]);
 
   return (
     <div className='mapping'>
