@@ -30,7 +30,7 @@ const Navbar = ({ setSearchdatas2, setClicksearch2 }) => {
       setValue("LOGIN")
       navigate('/signUp')
     }
-  });
+  },[null]);
 
 
   const handleclick = () => {
